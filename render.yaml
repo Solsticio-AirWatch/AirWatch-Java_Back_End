@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: airwatch-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:oracle:thin:@//oracle.fiap.com.br:1521/orcl
+      - key: SPRING_DATASOURCE_USERNAME
+        value: RM565760
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: "150606"
+      - key: AIRWATCH_JWT_SECRET
+        value: AirWatchSolsticioFIAP2026SecretKeyBase64EncodedMinimo256bits
+      - key: AIRWATCH_JWT_EXPIRATION
+        value: "86400000"
+      - key: PORT
+        value: "8080"
+    healthCheckPath: /actuator/health
