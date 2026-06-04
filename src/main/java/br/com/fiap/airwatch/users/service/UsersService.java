@@ -8,8 +8,6 @@ import br.com.fiap.airwatch.users.model.Users;
 import br.com.fiap.airwatch.users.repository.UsersRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.*;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -23,7 +21,6 @@ public class UsersService implements UserDetailsService {
     private final CityService cityService;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
-    private final AuthenticationManager authenticationManager;
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
@@ -31,13 +28,7 @@ public class UsersService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("User not found: " + email));
     }
 
-    public AuthResponse authenticate(AuthRequest req) {
-        authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(req.email(), req.password())
-        );
-        return buildAuthResponse(req.email());
-    }
-
+    // Mantemos este método para o controller chamar após validar a senha
     public AuthResponse buildAuthResponse(String email) {
         var user = repo.findByEmail(email).orElseThrow();
         user.setLastLoginAt(LocalDateTime.now());
