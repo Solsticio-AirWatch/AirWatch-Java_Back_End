@@ -9,6 +9,8 @@
 | RM | Nome | Turma |
 |---|---|---|
 | RM565760 | Enrico Delesporte | 2TDSPG |
+| RM561810 | Felipe Modesto | 2TDSPG |
+| RM565422| Vitor Dias | 2TDSPG |
 
 ---
 
@@ -19,6 +21,7 @@
 | **Repositório GitHub** | https://github.com/Solsticio-AirWatch/AirWatch-Java_Back_End |
 | **API em Nuvem (Deploy)** | http://102.37.101.26:8080 |
 | **Swagger UI** | http://102.37.101.26:8080/swagger-ui.html |
+| **RENDER** | [http://102.37.101.26:8080/swagger-ui.html](https://airwatch-api.onrender.com/swagger-ui/index.html#/AlertEvent/findAll_5) |
 | **Health Check** | http://102.37.101.26:8080/actuator/health |
 | **Vídeo de Apresentação** | (adicionar link YouTube) |
 | **Vídeo Pitch** | (adicionar link YouTube) |
