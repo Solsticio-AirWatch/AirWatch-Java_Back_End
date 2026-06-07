@@ -23,8 +23,8 @@
 | **Swagger UI** | http://102.37.101.26:8080/swagger-ui.html |
 | **RENDER** | [http://102.37.101.26:8080/swagger-ui.html](https://airwatch-api.onrender.com/swagger-ui/index.html#/AlertEvent/findAll_5) |
 | **Health Check** | http://102.37.101.26:8080/actuator/health |
-| **Vídeo de Apresentação** | (adicionar link YouTube) |
-| **Vídeo Pitch** | (adicionar link YouTube) |
+| **Vídeo de Apresentação** | https://youtu.be/PeORuUpWMKM?si=eaULRcxpFufFmBdF|
+| **Vídeo Pitch** |  https://youtu.be/VETzkKojZaA?si=BLVaojFXzyI3AQso |
 
 ---
 
