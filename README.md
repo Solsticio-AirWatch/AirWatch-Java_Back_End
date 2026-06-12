@@ -1,10 +1,10 @@
-# AirWatch 🌍
+# AirWatch
 ### Plataforma de Monitoramento de Qualidade do Ar
 **Grupo Solsticio | FIAP 2026 | Java Advanced**
 
 ---
 
-## 👥 Integrantes
+## Integrantes
 
 | RM | Nome | Turma |
 |---|---|---|
@@ -14,7 +14,7 @@
 
 ---
 
-## 🔗 Links do Projeto
+## Links do Projeto
 
 | Recurso | URL |
 |---|---|
@@ -28,7 +28,7 @@
 
 ---
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 O **AirWatch** é uma plataforma de monitoramento de qualidade do ar em tempo real que conecta tecnologia espacial a um problema urbano real. Utiliza dados de satélites (NASA POWER, ESA Sentinel-5P, OpenAQ) e sensores IoT (ESP32) para informar cidadãos e gestores públicos sobre índices de poluição atmosférica.
 
@@ -38,7 +38,7 @@ O **AirWatch** é uma plataforma de monitoramento de qualidade do ar em tempo re
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 | Tecnologia | Versão | Uso |
 |---|---|---|
@@ -56,7 +56,7 @@ O **AirWatch** é uma plataforma de monitoramento de qualidade do ar em tempo re
 
 ---
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 ```
 src/main/java/br/com/fiap/airwatch/
@@ -85,7 +85,7 @@ src/main/java/br/com/fiap/airwatch/
 
 ---
 
-## 🗄️ Banco de Dados
+## Banco de Dados
 
 8 tabelas relacionais em Oracle 21c:
 
@@ -102,7 +102,7 @@ src/main/java/br/com/fiap/airwatch/
 
 ---
 
-## 🔗 Endpoints
+## Endpoints
 
 ### Autenticação (sem token)
 | Método | Endpoint | Descrição |
@@ -133,7 +133,7 @@ src/main/java/br/com/fiap/airwatch/
 
 ---
 
-## 🚀 Como Executar — Local (Perfil FIAP)
+## Como Executar — Local (Perfil FIAP)
 
 ### Pré-requisitos
 - Java 17+
@@ -167,7 +167,7 @@ http://localhost:8080/swagger-ui.html
 
 ---
 
-## 🚀 Como Executar — Docker (Local)
+## Como Executar — Docker (Local)
 
 ```bash
 # Subir API + Oracle juntos
@@ -182,7 +182,7 @@ curl http://localhost:8080/actuator/health
 
 ---
 
-## 🚀 Como Executar — Nuvem (Azure VM)
+## Como Executar — Nuvem (Azure VM)
 
 A aplicação está deployada em: **http://102.37.101.26:8080**
 
@@ -197,7 +197,7 @@ docker compose up --build -d
 
 ---
 
-## 🔑 Testando a API
+## Testando a API
 
 ### 1. Registrar e logar
 ```bash
@@ -247,7 +247,7 @@ curl http://102.37.101.26:8080/api/countries \
 
 ---
 
-## 🔒 Segurança
+## Segurança
 
 - **JWT** com expiração de 24h
 - **Endpoints públicos:** todos os GETs, `/api/auth/**`, Swagger, Actuator
@@ -257,7 +257,7 @@ curl http://102.37.101.26:8080/api/countries \
 
 ---
 
-## 🌐 Perfis de Ambiente
+## Perfis de Ambiente
 
 | Perfil | Banco | Como ativar |
 |---|---|---|
